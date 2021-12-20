@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="197.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label text="Matrix A" />
+         <Label text="                                                                                                           Matrix B" />
+         <Label text="                                                                    Matrix C" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TableView fx:id="tableViewA" prefHeight="112.0" prefWidth="470.0">
+           <columns>
+             <TableColumn id="Matrix1Real1" fx:id="Matrix1Real1" prefWidth="75.0" resizable="false" sortable="false" text="1 (real)" />
+             <TableColumn id="Matrix1Imag1" fx:id="Matrix1Imag1" prefWidth="77.0" resizable="false" text="1 (imag)" />
+               <TableColumn id="Matrix1Real2" fx:id="Matrix1Real2" prefWidth="75.0" resizable="false" text="2 (real)" />
+               <TableColumn id="Matrix1Imag2" fx:id="Matrix1Imag2" prefWidth="75.0" resizable="false" text="2 (imag)" />
+               <TableColumn id="Matrix1Real3" fx:id="Matrix1Real3" prefWidth="75.0" resizable="false" text="3 (real)" />
+               <TableColumn id="Matrix1Imag3" fx:id="Matrix1Imag3" prefWidth="79.0" resizable="false" text="3 (imag)" />
+           </columns>
+         </TableView>
+         <VBox prefHeight="100.0" prefWidth="35.0">
+            <children>
+               <Label />
+            
+                <Label fx:id="welcomeText" />
+               <Label fx:id="welcomeText1" />
+               <Label fx:id="welcomeText2" text="   *" />
+               <Label fx:id="welcomeText3" />
+               <Label fx:id="welcomeText4" />
+               <Label fx:id="welcomeText41" />
+            </children>
+         </VBox>
+         <TableView fx:id="tableViewB" prefHeight="112.0" prefWidth="321.0">
+           <columns>
+             <TableColumn fx:id="Matrix2Real1" prefWidth="75.0" resizable="false" text="1 (real)" />
+             <TableColumn fx:id="Matrix2Imag1" prefWidth="75.0" resizable="false" text="1 (imag)" />
+               <TableColumn fx:id="Matrix2Real2" prefWidth="75.0" resizable="false" sortable="false" text="2 (real)" />
+               <TableColumn fx:id="Matrix2Imag2" prefWidth="83.0" resizable="false" text="2 (imag)" />
+           </columns>
+         </TableView>
+         <VBox prefHeight="100.0" prefWidth="35.0">
+            <children>
+               <Label />
+               <Label fx:id="welcomeText1" />
+               <Label fx:id="welcomeText11" />
+               <Label fx:id="welcomeText21" text="   =" />
+               <Label fx:id="welcomeText31" />
+               <Label fx:id="welcomeText41" />
+               <Label fx:id="welcomeText411" />
+            </children>
+         </VBox>
+         <TableView fx:id="tableViewC" prefHeight="112.0" prefWidth="312.0">
+           <columns>
+             <TableColumn fx:id="Matrix3Real1" prefWidth="75.0" resizable="false" text="1 (real)" />
+             <TableColumn fx:id="Matrix3Imag1" prefWidth="75.0" resizable="false" text="1 (imag)" />
+               <TableColumn fx:id="Matrix3Real2" prefWidth="75.0" resizable="false" text="2 (real)" />
+               <TableColumn fx:id="Matrix3Imag2" prefWidth="75.0" resizable="false" text="2 (imag)" />
+           </columns>
+         </TableView>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label />
+      </children>
+   </HBox>
+   <HBox prefHeight="41.0" prefWidth="628.0">
+      <children>
+         <Label text="Matrix (A/B): " />
+         <TextField fx:id="field11" prefHeight="13.0" prefWidth="60.0" />
+         <Label text=" Row: " />
+         <TextField fx:id="field1" prefHeight="13.0" prefWidth="60.0" />
+         <Label text=" Column: " />
+         <TextField fx:id="field2" prefHeight="6.0" prefWidth="60.0" />
+         <Label text=" Item Value: " />
+         <TextField fx:id="field3" prefHeight="7.0" prefWidth="60.0" />
+         <Label fx:id="welcomeText22" text="    " />
+         <Button fx:id="AddElementButton" mnemonicParsing="false" onAction="#newGUIUpdate" text="Add Element" />
+         <Label text="                      Row and column numbers start at zero" />
+      </children>
+   </HBox>
+</VBox>
